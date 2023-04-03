@@ -164,13 +164,13 @@ slopeRatingDf2 = pd.DataFrame({
 
 
 tieDf = pd.DataFrame({
-"golfCourseId":golfCourseIdArray,
+"golf_course_id":golfCourseIdArray,
 "courseName":courseNameArray,
 "par":parArray2,
-"inOut":inOutArray,
-"courseTypeId":courseTypeIdArray,
+"course_type_name":inOutArray,
+"course_type_id":courseTypeIdArray,
 "tie":tieArray2,
-"holeNumber":holeNumberArray,
+"course_layout_index":holeNumberArray,
 "yard":yardArray
 })  
 
@@ -210,14 +210,14 @@ for i,srCourseName in enumerate(srCourseNameArray):
         continue
 
 slopeRatingDf2 = pd.DataFrame({
-"golfCourseId":srGolfCourseIdArray3,
+"golf_course_id":srGolfCourseIdArray3,
 "courseName":srCourseNameArray3,
-"courseType1Name":srCourseType1NameArray3,
-"courseType1Id":srCourseType1IdArray3,
-"courseType2Name":srCourseType2NameArray3,
-"courseType2Id":srCourseType2IdArray3,
+"in_course_name":srCourseType1NameArray3,
+"in_course_id":srCourseType1IdArray3,
+"out_course_name":srCourseType2NameArray3,
+"out_course_id":srCourseType2IdArray3,
 "tee":srTeeArray3,
-"sr":srArray3,
+"slope_rating":srArray3,
 "gender":srGenderArray3
 })
 
