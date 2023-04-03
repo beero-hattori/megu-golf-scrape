@@ -24,3 +24,4 @@ df["golfCourseIds"] = golfCourseIds
 
 
 
+print(df.head(5))
