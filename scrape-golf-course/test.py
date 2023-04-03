@@ -56,7 +56,7 @@ for j in range(1,48):
         url = 'https://hcp.jga.or.jp/ratings/search'
         driver.get(url)
         
-        time.sleep(3)
+        time.sleep(1)
         select_elements = driver.find_elements(By.TAG_NAME,'select')
         select_element = select_elements[1]
         select = Select(select_element)
@@ -83,7 +83,7 @@ for j in range(1,48):
         element = driver.find_element(By.NAME,'searchButton')
                 # # エラー発生
         element.click()
-        time.sleep(3)
+        time.sleep(1)
         try:
             pageNo = driver.find_element(By.CLASS_NAME,"pageNo").text
             totalPages = int(pageNo.split("/")[1])
