@@ -5,6 +5,10 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import numpy as np
 import uuid
+import datetime
+
+dt = datetime.datetime.now()
+ts = datetime.datetime.timestamp(dt)
 
 
 tieDf = pd.read_csv('./scrape-golf-course/tie.csv')
@@ -16,6 +20,8 @@ for v in tieDf["golf_course_id"].values:
     course_layout_ids.append(course_layout_id)
 
 tieDf["course_layout_id"] = course_layout_ids
+tieDf["created_at"]        = int(ts)
+tieDf["updated_at"]        = int(ts)
 
 print(tieDf.head(5))
 
