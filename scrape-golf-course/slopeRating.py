@@ -102,7 +102,7 @@ for url in golfCourseLinks:
         print("e",e)
     
 # print(len(maleTables))
-
+# slope ratingの実装
 
 
 
